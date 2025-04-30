@@ -43,24 +43,41 @@
 	});
 </script>
 
-<div
-	class="flex min-h-screen flex-col items-center justify-center bg-[url('/bg-result.png')] bg-cover bg-no-repeat"
->
-	<div class="flex flex-col p-5 text-center">
-		<!-- <h1 class="mb-10 font-bold text-3xl">Upload Image</h1> -->
+<section class="relative min-h-screen overflow-hidden">
+	<div class="flex min-h-screen flex-col items-center justify-center bg-[url('/bg-result.png')] bg-cover bg-no-repeat">
+		<div class="flex flex-col p-5 text-center">
+			<!-- <h1 class="mb-10 font-bold text-3xl">Upload Image</h1> -->
 
-		{#if avatar}
-			<!-- <canvas
-				id="canvas"
-				width="1000px"
-				height="500px"
-				class="z-0 h-[500px] w-[300px] items-center rounded-2xl bg-white px-8 pt-9"
-			></canvas> -->
+			{#if avatar}
+				<!-- <canvas
+					id="canvas"
+					width="1000px"
+					height="500px"
+					class="z-0 h-[500px] w-[300px] items-center rounded-2xl bg-white px-8 pt-9"
+				></canvas> -->
+				<div class="m-auto mt-25 h-[700px] w-[500px] bg-[#FFD3D3]">
+					<div class="flex justify-center">
+						<img src="gemfatephoto.png" />
+					</div>
+					<img class="m-auto h-[386px] w-[404px] object-cover " src={avatar} alt="name">
+					<div class="m-auto flex justify-center">
+						<img src="icon.png" class="m-5" />
+					</div><img src="photogem1.png" class="translate-x-[400px] -translate-y-[500px]" />
+					<img src="photogem2.png" class="-translate-x-[50px] -translate-y-[450px]" />
+					<img src="photogem3.png" class="translate-x-[470px] -translate-y-[325px]" />
+					<img src="photogem4.png" class="-translate-x-[50px] -translate-y-[200px]" />
+
+					<p class="-translate-y-[300px]  text-xl font-prompt">{full_sentence_local}</p>
+				</div>
+
+				<!-- Download Complete -->
+				<!-- <button onclick={putImage} class="bg-pink-300 p-3">Click to console</button> -->
+			{:else}
 			<div class="m-auto mt-25 h-[700px] w-[500px] bg-[#FFD3D3]">
 				<div class="flex justify-center">
 					<img src="gemfatephoto.png" />
 				</div>
-				<img class="m-auto h-[386px] w-[404px] object-cover " src={avatar} alt="name">
+				<div class="m-auto h-[386px] w-[404px] bg-white"></div>
 				<div class="m-auto flex justify-center">
 					<img src="icon.png" class="m-5" />
 				</div><img src="photogem1.png" class="translate-x-[400px] -translate-y-[500px]" />
@@ -71,42 +88,25 @@
 				<p class="-translate-y-[300px]  text-xl font-prompt">{full_sentence_local}</p>
 			</div>
 
-			<!-- Download Complete -->
-			<!-- <button onclick={putImage} class="bg-pink-300 p-3">Click to console</button> -->
-		{:else}
-		<div class="m-auto mt-25 h-[700px] w-[500px] bg-[#FFD3D3]">
-			<div class="flex justify-center">
-				<img src="gemfatephoto.png" />
-			</div>
-			<div class="m-auto h-[386px] w-[404px] bg-white"></div>
-			<div class="m-auto flex justify-center">
-				<img src="icon.png" class="m-5" />
-			</div><img src="photogem1.png" class="translate-x-[400px] -translate-y-[500px]" />
-			<img src="photogem2.png" class="-translate-x-[50px] -translate-y-[450px]" />
-			<img src="photogem3.png" class="translate-x-[470px] -translate-y-[325px]" />
-			<img src="photogem4.png" class="-translate-x-[50px] -translate-y-[200px]" />
-
-			<p class="-translate-y-[300px]  text-xl font-prompt">{full_sentence_local}</p>
+			<button
+			class="mt-10 m-auto duration-500 ease-in-out hover:scale-125"
+			onclick={() => {
+				fileinput.click();
+			}}>
+			<img src="/add.png" alt="add">
+			</button
+	>
+	<input
+		style="display:none"
+		type="file"
+		accept=".jpg, .jpeg, .png"
+		onchange={(e) => onFileSelected(e)}
+		bind:this={fileinput}
+	/>
+			{/if}
 		</div>
-
-		<button
-		class="mt-10 m-auto duration-500 ease-in-out hover:scale-125"
-		onclick={() => {
-			fileinput.click();
-		}}>
-		<img src="/add.png" alt="add">
-		</button
->
-<input
-	style="display:none"
-	type="file"
-	accept=".jpg, .jpeg, .png"
-	onchange={(e) => onFileSelected(e)}
-	bind:this={fileinput}
-/>
-		{/if}
 	</div>
-</div>
+</section>
 
 
 <!-- <button
