@@ -53,20 +53,20 @@
 				}}
 				class="mt-2 transition duration-300 hover:scale-110"
 			>
-				<img src="/rocks/rock1.png" alt="rock1" class="w-[400px]" />
+				<img alt="" src="/rocks/rock1.png" class="w-[400px]" />
 			</button>
 		{:else if gender_rand == 'ผู้ชาย'}
-			<img src="/gems/male.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/male.png" class="w-[400px]" />
 		{:else if gender_rand == 'ผู้หญิง'}
-			<img src="/gems/female.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/female.png" class="w-[400px]" />
 		{/if}
 
 		<Modal bind:showModal>
 			{#if gender_rand == 'ผู้ชาย'}
-				<img src="/modals/male.png" alt="gem1" />
+				<img alt="" src="/modals/male.png" />
 				
 			{:else if gender_rand == 'ผู้หญิง'}
-				<img src="/modals/female.png" alt="gem1" class="z-0"/>
+				<img alt="" src="/modals/female.png" class="z-0"/>
 				
 
 			{/if}
@@ -84,23 +84,23 @@
 				}}
 				class="mt-2 transition duration-300 hover:scale-110"
 			>
-				<img src="/rocks/rock2.png" alt="rock1" class="w-[400px]" />
+				<img alt="" src="/rocks/rock2.png" class="w-[400px]" />
 			</button>
 		{:else if acc_rand == 'ใส่แว่นตา'}
-			<img src="/gems/glasses.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/glasses.png" class="w-[400px]" />
 		{:else if acc_rand == 'ใส่นาฬิกา'}
-			<img src="/gems/watch.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/watch.png" class="w-[400px]" />
 		{:else if acc_rand == 'ใส่เสื้อกันหนาว'}
-			<img src="/gems/cloth.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/cloth.png" class="w-[400px]" />
 		{/if}
 
 		<Modal bind:showModal2>
 			{#if acc_rand == 'ใส่แว่นตา'}
-				<img src="/modals/glasses.png" alt="gem1" />
+				<img alt="" src="/modals/glasses.png" />
 			{:else if acc_rand == 'ใส่นาฬิกา'}
-				<img src="/modals/watch.png" alt="gem1" />
+				<img alt="" src="/modals/watch.png" />
 			{:else if acc_rand == 'ใส่เสื้อกันหนาว'}
-				<img src="/modals/cloth.png" alt="gem1" />
+				<img alt="" src="/modals/cloth.png" />
 			{/if}
 		</Modal>
 
@@ -116,27 +116,27 @@
 				}}
 				class="mt-2 transition duration-300 hover:scale-110"
 			>
-				<img src="/rocks/rock3.png" alt="rock1" class="w-[400px]" />
+				<img alt="" src="/rocks/rock3.png" class="w-[400px]" />
 			</button>
 		{:else if house_rand == 'อยู่บ้าน Drop '}
-			<img src="/gems/drop.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/drop.png" class="w-[400px]" />
 		{:else if house_rand == 'อยู่บ้าน Pro '}
-			<img src="/gems/pro.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/pro.png" class="w-[400px]" />
 		{:else if house_rand == 'อยู่บ้าน Re '}
-			<img src="/gems/re.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/re.png" class="w-[400px]" />
 		{:else if house_rand == 'อยู่บ้าน Tire '}
-			<img src="/gems/tine.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/tine.png" class="w-[400px]" />
 		{/if}
 
 		<Modal bind:showModal3>
 			{#if house_rand == 'อยู่บ้าน Drop '}
-				<img src="/modals/drop.png" alt="gem1" />
+				<img alt="" src="/modals/drop.png" />
 			{:else if house_rand == 'อยู่บ้าน Pro '}
-				<img src="/modals/pro.png" alt="gem1" />
+				<img alt="" src="/modals/pro.png" />
 			{:else if house_rand == 'อยู่บ้าน Re '}
-				<img src="/modals/re.png" alt="gem1" />
+				<img alt="" src="/modals/re.png" />
 			{:else if house_rand == 'อยู่บ้าน Tire '}
-				<img src="/modals/tire.png" alt="gem1" />
+				<img alt="" src="/modals/tire.png" />
 			{/if}
 		</Modal>
 
@@ -153,49 +153,49 @@
 				}}
 				class="mt-2 transition duration-300 hover:scale-110"
 			>
-				<img src="/rocks/rock4.png" alt="rock1" class="w-[400px]" />
+				<img alt="" src="/rocks/rock4.png" class="w-[400px]" />
 			</button>
 		{:else if camp_rand == 'และอยู่ค่าย Webgarnetic'}
-			<img src="/gems/web.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/web.png" class="w-[400px]" />
 		{:else if camp_rand == 'และอยู่ค่าย Infra'}
-			<img src="/gems/infra.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/infra.png" class="w-[400px]" />
 		{:else if camp_rand == 'และอยู่ค่าย Data'}
-			<img src="/gems/data.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/data.png" class="w-[400px]" />
 		{:else if camp_rand == 'และอยู่ค่าย Game'}
-			<img src="/gems/game.png" alt="gem1" class="w-[400px]" />
+			<img alt="" src="/gems/game.png" class="w-[400px]" />
 		{/if}
 
 		<Modal bind:showModal4>
 			{#if camp_rand == 'และอยู่ค่าย Webgarnetic'}
 			<div class="flex flex-col justify-center items-center">
 				<a href="/result" class="mt-1">
-					<img src="/result_button.png" alt="gem1" />
+					<img alt="" src="/result_button.png" />
 				</a>
-				<img src="/modals/web.png" alt="gem1" />
+				<img alt="" src="/modals/web.png" />
 				
 			</div>
 			{:else if camp_rand == 'และอยู่ค่าย Infra'}
 			<div class="flex flex-col justify-center items-center">
 				<a href="/result" class="mt-1">
-					<img src="/result_button.png" alt="gem1" />
+					<img alt="" src="/result_button.png" />
 				</a>
-				<img src="/modals/infra.png" alt="gem1" />
+				<img alt="" src="/modals/infra.png" />
 				
 			</div>
 			{:else if camp_rand == 'และอยู่ค่าย Data'}
 			<div class="flex flex-col justify-center items-center">
 				<a href="/result" class="mt-1">
-					<img src="/result_button.png" alt="gem1" />
+					<img alt="" src="/result_button.png" />
 				</a>
-				<img src="/modals/data.png" alt="gem1" />
+				<img alt="" src="/modals/data.png" />
 				
 			</div>
 			{:else if camp_rand == 'และอยู่ค่าย Game'}
 			<div class="flex flex-col justify-center items-center">
 				<a href="/result" class="mt-1">
-					<img src="/result_button.png" alt="gem1" />
+					<img alt="" src="/result_button.png" />
 				</a>
-				<img src="/modals/game.png" alt="gem1" />
+				<img alt="" src="/modals/game.png" />
 				
 			</div>
 			{/if}

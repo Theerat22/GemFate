@@ -24,8 +24,8 @@
 	// 	let canvas = document.getElementById('canvas');
 	// 	// let ctx = canvas.ge
 	// 	let ctx = canvas.getContext('2d');
-	// 	let img = document.getElementById('img');
-	// 	ctx.drawImage(img, 10, 10);
+	// 	let img alt="" = document.getElementById('img alt=""');
+	// 	ctx.drawImage(img alt="", 10, 10);
 
 	// 	const dataURL = canvas.toDataURL();
 	// 	console.log(dataURL);
@@ -58,15 +58,15 @@
 			></canvas> -->
 			<div class="m-auto mt-25 h-[700px] w-[500px] bg-[#FFD3D3]">
 				<div class="flex justify-center">
-					<img src="gemfatephoto.png" />
+					<img alt="" src="gemfatephoto.png" />
 				</div>
-				<img class="m-auto h-[386px] w-[404px] object-cover " src={avatar} alt="name">
+				<img alt="" class="m-auto h-[386px] w-[404px] object-cover " src={avatar}>
 				<div class="m-auto flex justify-center">
-					<img src="icon.png" class="m-5" />
-				</div><img src="photogem1.png" class="translate-x-[400px] -translate-y-[500px]" />
-				<img src="photogem2.png" class="-translate-x-[50px] -translate-y-[450px]" />
-				<img src="photogem3.png" class="translate-x-[470px] -translate-y-[325px]" />
-				<img src="photogem4.png" class="-translate-x-[50px] -translate-y-[200px]" />
+					<img alt="" src="icon.png" class="m-5" />
+				</div><img alt="" src="photogem1.png" class="translate-x-[400px] -translate-y-[500px]" />
+				<img alt="" src="photogem2.png" class="-translate-x-[50px] -translate-y-[450px]" />
+				<img alt="" src="photogem3.png" class="translate-x-[470px] -translate-y-[325px]" />
+				<img alt="" src="photogem4.png" class="-translate-x-[50px] -translate-y-[200px]" />
 
 				<p class="-translate-y-[300px]  text-xl font-prompt">{full_sentence_local}</p>
 			</div>
@@ -76,15 +76,15 @@
 		{:else}
 		<div class="m-auto mt-25 h-[700px] w-[500px] bg-[#FFD3D3]">
 			<div class="flex justify-center">
-				<img src="gemfatephoto.png" />
+				<img alt="" src="gemfatephoto.png" />
 			</div>
 			<div class="m-auto h-[386px] w-[404px] bg-white"></div>
 			<div class="m-auto flex justify-center">
-				<img src="icon.png" class="m-5" />
-			</div><img src="photogem1.png" class="translate-x-[400px] -translate-y-[500px]" />
-			<img src="photogem2.png" class="-translate-x-[50px] -translate-y-[450px]" />
-			<img src="photogem3.png" class="translate-x-[470px] -translate-y-[325px]" />
-			<img src="photogem4.png" class="-translate-x-[50px] -translate-y-[200px]" />
+				<img alt="" src="icon.png" class="m-5" />
+			</div><img alt="" src="photogem1.png" class="translate-x-[400px] -translate-y-[500px]" />
+			<img alt="" src="photogem2.png" class="-translate-x-[50px] -translate-y-[450px]" />
+			<img alt="" src="photogem3.png" class="translate-x-[470px] -translate-y-[325px]" />
+			<img alt="" src="photogem4.png" class="-translate-x-[50px] -translate-y-[200px]" />
 
 			<p class="-translate-y-[300px]  text-xl font-prompt">{full_sentence_local}</p>
 		</div>
@@ -94,7 +94,7 @@
 		onclick={() => {
 			fileinput.click();
 		}}>
-		<img src="/add.png" alt="add">
+		<img alt="" src="/add.png">
 		</button
 >
 <input
