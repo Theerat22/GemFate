@@ -24,8 +24,8 @@
 	// 	let canvas = document.getElementById('canvas');
 	// 	// let ctx = canvas.ge
 	// 	let ctx = canvas.getContext('2d');
-	// 	let img = document.getElementById('img');
-	// 	ctx.drawImage(img, 10, 10);
+	// 	let img alt="" = document.getElementById('img alt=""');
+	// 	ctx.drawImage(img alt="", 10, 10);
 
 	// 	const dataURL = canvas.toDataURL();
 	// 	console.log(dataURL);
@@ -75,19 +75,24 @@
 			{:else}
 			<div class="m-auto mt-25 h-[700px] w-[500px] bg-[#FFD3D3]">
 				<div class="flex justify-center">
-					<img src="gemfatephoto.png" />
+					<img alt="" src="gemfatephoto.png" />
 				</div>
+<<<<<<< HEAD
 				<div class="m-auto h-[386px] w-[404px] bg-white"></div>
+=======
+				<img alt="" class="m-auto h-[386px] w-[404px] object-cover " src={avatar}>
+>>>>>>> 2c28850f1ad2254de85a147845994a89b49d5e90
 				<div class="m-auto flex justify-center">
-					<img src="icon.png" class="m-5" />
-				</div><img src="photogem1.png" class="translate-x-[400px] -translate-y-[500px]" />
-				<img src="photogem2.png" class="-translate-x-[50px] -translate-y-[450px]" />
-				<img src="photogem3.png" class="translate-x-[470px] -translate-y-[325px]" />
-				<img src="photogem4.png" class="-translate-x-[50px] -translate-y-[200px]" />
+					<img alt="" src="icon.png" class="m-5" />
+				</div><img alt="" src="photogem1.png" class="translate-x-[400px] -translate-y-[500px]" />
+				<img alt="" src="photogem2.png" class="-translate-x-[50px] -translate-y-[450px]" />
+				<img alt="" src="photogem3.png" class="translate-x-[470px] -translate-y-[325px]" />
+				<img alt="" src="photogem4.png" class="-translate-x-[50px] -translate-y-[200px]" />
 
 				<p class="-translate-y-[300px]  text-xl font-prompt">{full_sentence_local}</p>
 			</div>
 
+<<<<<<< HEAD
 			<button
 			class="mt-10 m-auto duration-500 ease-in-out hover:scale-125"
 			onclick={() => {
@@ -105,6 +110,42 @@
 	/>
 			{/if}
 		</div>
+=======
+			<!-- Download Complete -->
+			<!-- <button onclick={putImage} class="bg-pink-300 p-3">Click to console</button> -->
+		{:else}
+		<div class="m-auto mt-25 h-[700px] w-[500px] bg-[#FFD3D3]">
+			<div class="flex justify-center">
+				<img alt="" src="gemfatephoto.png" />
+			</div>
+			<div class="m-auto h-[386px] w-[404px] bg-white"></div>
+			<div class="m-auto flex justify-center">
+				<img alt="" src="icon.png" class="m-5" />
+			</div><img alt="" src="photogem1.png" class="translate-x-[400px] -translate-y-[500px]" />
+			<img alt="" src="photogem2.png" class="-translate-x-[50px] -translate-y-[450px]" />
+			<img alt="" src="photogem3.png" class="translate-x-[470px] -translate-y-[325px]" />
+			<img alt="" src="photogem4.png" class="-translate-x-[50px] -translate-y-[200px]" />
+
+			<p class="-translate-y-[300px]  text-xl font-prompt">{full_sentence_local}</p>
+		</div>
+
+		<button
+		class="mt-10 m-auto duration-500 ease-in-out hover:scale-125"
+		onclick={() => {
+			fileinput.click();
+		}}>
+		<img alt="" src="/add.png">
+		</button
+>
+<input
+	style="display:none"
+	type="file"
+	accept=".jpg, .jpeg, .png"
+	onchange={(e) => onFileSelected(e)}
+	bind:this={fileinput}
+/>
+		{/if}
+>>>>>>> 2c28850f1ad2254de85a147845994a89b49d5e90
 	</div>
 </section>
 
