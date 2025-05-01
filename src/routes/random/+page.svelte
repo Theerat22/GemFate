@@ -57,7 +57,7 @@
 						}}
 						class="mt-2 transition duration-300 hover:scale-110"
 					>
-						<img src="/rocks/rock1.png" alt="rock1" class="w-[400px]" />
+						<img src="/rocks/rock1.png" alt="rock1" class="w-[400px]" loading="lazy" />
 					</button>
 				{:else if gender_rand == 'ผู้ชาย'}
 					<img src="/gems/male.png" alt="gem1" class="w-[400px]" />
